@@ -1,0 +1,161 @@
+
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html id="htmlId">
+<head>
+  <title>Coverage Report :: Event</title>
+  <style type="text/css">
+    @import "../../.css/coverage.css";
+  </style>
+</head>
+
+<body>
+<div class="header"></div>
+
+<div class="content">
+<div class="breadCrumbs">
+    [ <a href="../../index.html">all classes</a> ]
+    [ <a href="../index.html">info.pim.model</a> ]
+</div>
+
+<h1>Coverage Summary for Class: Event (info.pim.model)</h1>
+
+<table class="coverageStats">
+<tr>
+  <th class="name">Class</th>
+<th class="coverageStat 
+">
+  Class, %
+</th>
+<th class="coverageStat 
+">
+  Method, %
+</th>
+<th class="coverageStat 
+">
+  Line, %
+</th>
+</tr>
+<tr>
+  <td class="name">Event</td>
+<td class="coverageStat">
+  <span class="percent">
+    100%
+  </span>
+  <span class="absValue">
+    (1/ 1)
+  </span>
+</td>
+<td class="coverageStat">
+  <span class="percent">
+    100%
+  </span>
+  <span class="absValue">
+    (11/ 11)
+  </span>
+</td>
+<td class="coverageStat">
+  <span class="percent">
+    100%
+  </span>
+  <span class="absValue">
+    (18/ 18)
+  </span>
+</td>
+</tr>
+
+</table>
+
+<br/>
+<br/>
+
+
+<div class="sourceCode"><i>1</i>&nbsp;package info.pim.model;
+<i>2</i>&nbsp;
+<i>3</i>&nbsp;import java.io.Serializable;
+<i>4</i>&nbsp;
+<i>5</i>&nbsp;/**
+<i>6</i>&nbsp; * 事件模型
+<i>7</i>&nbsp; */
+<b class="fc"><i>8</i>&nbsp;public class Event implements Serializable {</b>
+<i>9</i>&nbsp;    private static final long serialVersionUID = 1L;
+<i>10</i>&nbsp;
+<i>11</i>&nbsp;    /**
+<i>12</i>&nbsp;     * 唯一标识
+<i>13</i>&nbsp;     */
+<i>14</i>&nbsp;    private String id;
+<i>15</i>&nbsp;
+<i>16</i>&nbsp;    /**
+<i>17</i>&nbsp;     * 开始日期
+<i>18</i>&nbsp;     */
+<i>19</i>&nbsp;    private String startTime;
+<i>20</i>&nbsp;
+<i>21</i>&nbsp;    /**
+<i>22</i>&nbsp;     * 警告信息
+<i>23</i>&nbsp;     */
+<i>24</i>&nbsp;    private String alarm;
+<i>25</i>&nbsp;
+<i>26</i>&nbsp;    /**
+<i>27</i>&nbsp;     * 描述
+<i>28</i>&nbsp;     */
+<i>29</i>&nbsp;    private String description;
+<i>30</i>&nbsp;
+<i>31</i>&nbsp;    public void copyData(Event source) {
+<b class="fc"><i>32</i>&nbsp;        this.startTime = source.startTime;</b>
+<b class="fc"><i>33</i>&nbsp;        this.alarm = source.alarm;</b>
+<b class="fc"><i>34</i>&nbsp;        this.description = source.description;</b>
+<b class="fc"><i>35</i>&nbsp;    }</b>
+<i>36</i>&nbsp;
+<i>37</i>&nbsp;    public String getId() {
+<b class="fc"><i>38</i>&nbsp;        return id;</b>
+<i>39</i>&nbsp;    }
+<i>40</i>&nbsp;
+<i>41</i>&nbsp;    public void setId(String id) {
+<b class="fc"><i>42</i>&nbsp;        this.id = id;</b>
+<b class="fc"><i>43</i>&nbsp;    }</b>
+<i>44</i>&nbsp;
+<i>45</i>&nbsp;    public String getStartTime() {
+<b class="fc"><i>46</i>&nbsp;        return startTime;</b>
+<i>47</i>&nbsp;    }
+<i>48</i>&nbsp;
+<i>49</i>&nbsp;    public void setStartTime(String startTime) {
+<b class="fc"><i>50</i>&nbsp;        this.startTime = startTime;</b>
+<b class="fc"><i>51</i>&nbsp;    }</b>
+<i>52</i>&nbsp;
+<i>53</i>&nbsp;    public String getAlarm() {
+<b class="fc"><i>54</i>&nbsp;        return alarm;</b>
+<i>55</i>&nbsp;    }
+<i>56</i>&nbsp;
+<i>57</i>&nbsp;    public void setAlarm(String alarm) {
+<b class="fc"><i>58</i>&nbsp;        this.alarm = alarm;</b>
+<b class="fc"><i>59</i>&nbsp;    }</b>
+<i>60</i>&nbsp;
+<i>61</i>&nbsp;    public String getDescription() {
+<b class="fc"><i>62</i>&nbsp;        return description;</b>
+<i>63</i>&nbsp;    }
+<i>64</i>&nbsp;
+<i>65</i>&nbsp;    public void setDescription(String description) {
+<b class="fc"><i>66</i>&nbsp;        this.description = description;</b>
+<b class="fc"><i>67</i>&nbsp;    }</b>
+<i>68</i>&nbsp;
+<i>69</i>&nbsp;    @Override
+<i>70</i>&nbsp;    public String toString() {
+<b class="fc"><i>71</i>&nbsp;        return &quot;Event{&quot; +</b>
+<i>72</i>&nbsp;                &quot;id=&#39;&quot; + id + &#39;\&#39;&#39; +
+<i>73</i>&nbsp;                &quot;, startTime=&#39;&quot; + startTime + &#39;\&#39;&#39; +
+<i>74</i>&nbsp;                &quot;, alarm=&#39;&quot; + alarm + &#39;\&#39;&#39; +
+<i>75</i>&nbsp;                &quot;, description=&#39;&quot; + description + &#39;\&#39;&#39; +
+<i>76</i>&nbsp;                &#39;}&#39;;
+<i>77</i>&nbsp;    }
+<i>78</i>&nbsp;}
+</div>
+</div>
+
+<div class="footer">
+    
+    <div style="float:right;">generated on 2023-10-28 13:26</div>
+</div>
+</body>
+</html>
